@@ -1,3 +1,17 @@
-for a client
+for a client. mock ajax.
 
-to do: ajax, add .js file of cities
+for a real ajax request, your JSON object should look something like this:
+
+```json
+[
+  {
+    "country": "United States",
+    "city": "NYC"
+  },
+  {
+    "country": "France",
+    "city": "Paris"
+  }
+]
+```
+

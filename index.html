@@ -2,10 +2,14 @@
 <html>
   <head>
     <title>Dynamicaly Dependent Drop Down Lists</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="description" content="">
     <link href="main.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/1.5.1/jquery.mockjax.js"></script> 
+    <script type="text/javascript" src="jquery.cascadingdropdown.js"></script> 
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
     <style>
@@ -13,23 +17,26 @@
   </head>
   <body>
     <div class="container">
-      <h1>Dynamic Drop Down via jQuery</h1>
-        <div class="form">
-          <strong>State</strong>
-          <select class="stateDropDown selectpicker">
-            <option value="">--Select State--</option>
-            <option value="NEWYORK">New York</option>
-            <option value="COLORADO">Colorado</option>
-            <option value="CALIFORNIA">California</option>
-          </select>
-        </div>
-        <div class="form">
-          <strong>City</strong>
-          <select class="cityDropDown selectpicker">
-            <option value="">--Select City--</option>
-          </select>
-        </div>
+    <h1>Dynamic Drop Down via jQuery</h1>
+      <p class="lead">Example Fun!</p>
+      <div id="dropper" class="drop">
+        <select class="country inputs">
+          <option value="">Select a country</option>
+          <option value="us">United States</option>
+          <option value="ca">Canada</option>
+        </select>
+        <select class="industry inputs">
+          <option value="">Select an industry</option>
+          <option value="trans">Transportation</option>
+          <option value="web">Web Development</option>
+          <option value="food">Food Services</option>
+        </select>
+      <select class="city">
+      <option value="">Select a city</option>
+      </select>
+      </div>
+      <br>
+      <h3 id="city"><h3>
     </div>
   </body>
 </html>
-
